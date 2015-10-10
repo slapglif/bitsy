@@ -64,26 +64,13 @@
                     <img src="http://puu.sh/kDbGK/37e6be702e.png" alt="Logo">
                 </a>
             </div><!-- /logo-container -->
-            <a href="#" class="search-form-trigger">
-                <i class="icon icon-knight-293"></i>
-            </a>
-            <div class="search-form-wrapper">
-                <form action="#" class="mobile-header-search-form">
-                    <input type="search" name="mobile-header-search-form" id="mobile-header-search-form" placeholder="Type &amp; hit enter">
-                </form>
-                <span class="search-form-close-trigger">
-                    <i class="icon icon-knight-521"></i>
-                </span>
-            </div><!-- /search-form-wrapper -->
+
         </div>
         <!-- /mobile-header-wrapper -->
 
         <!-- OFF CANVAS MOBILE MENU -->
         <nav class="main-nav offcanvas-menu mobile-nav shifter-navigation fullwidth-items fullwidth-menu white-bg">
-            <form action="#" class="search-form">
-                <input type="search" name="mobile-search-form" id="mobile-search-form" placeholder="Search">
-                <input type="submit" value="">
-            </form>
+
         </nav>
 
         <div class="main-wrapper shifter-page">
@@ -573,7 +560,7 @@
             $(function () {
                 var BV = new $.BigVideo({container: $('.tp-banner')});
                 BV.init();
-                BV.show('http://vjs.zencdn.net/v/oceans.mp4');
+                BV.show('/static/media/msv.mp4');
                 BV.getPlayer().volume(0)
             });
         </script>
