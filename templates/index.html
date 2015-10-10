@@ -45,6 +45,8 @@
      <link rel="stylesheet" href="/static/css/jquery-video-lightning.css">
 {#    <link rel="stylesheet" href="/static/css/skin.css">#}
     <link href="http://vjs.zencdn.net/5.0.0/video-js.css" rel="stylesheet">
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
+
 
     <!-- JS -->
     <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -428,7 +430,7 @@
                 <div class="portfolio-item-container col-md-6 web-design">
                     <div class="portfolio-item">
                         <figure>
-                            <a class="icon-zoom video-link video-target" data-video-id="y-Ip0BtIUzItg" data-video-width="1280px" data-video-height="720px" data-video-autoplay="1" > <img src="http://puu.sh/kEE9y/cc7570ca78.png" alt="Portfolio"></a>
+                            <a class="youtube" href="https://www.youtube.com/watch?v=Ip0BtIUzItg" > <img src="http://puu.sh/kEE9y/cc7570ca78.png" alt="Portfolio"></a>
                         </figure>
                         <div class="portfolio-item-details">
                             <div class="row">
@@ -456,7 +458,7 @@
                 <div class="portfolio-item-container col-md-6 web-design">
                     <div class="portfolio-item">
                         <figure>
-                           <a class="icon-zoom video-link video-target" data-video-id="y-5Y82ia3xSpU" data-video-width="1280px" data-video-height="720px" data-video-autoplay="1" > <img src="http://puu.sh/kEEei/3216bb23aa.png" alt="Knight Portfolio"></a>
+                           <a class="youtube"  href="https://www.youtube.com/watch?v=5Y82ia3xSpU" > <img src="http://puu.sh/kEEei/3216bb23aa.png" alt="Portfolio"></a>
                         </figure>
                         <div class="portfolio-item-details">
                             <div class="row">
@@ -727,6 +729,7 @@
 <script src="/static/js/isotope.pkgd.min.js"></script>
 <script src="/static/js/jquery.countTo.js"></script>
 <script src="/static/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
 <script src="/static/js/tweetie.min.js"></script>
 <script src="/static/js/wow.min.js"></script>
@@ -736,6 +739,7 @@
 <script src="http://vjs.zencdn.net/5.0.0/video.js"></script>
 <script src="/static/js/bigvideo.js"></script>
 <script src="/static/js/jquery-video-lightning.js"></script>
+<script src="/static/js/videobox.js"></script>
 
 {#<script src="/static/js/all_in_one_libs.min.js"></script>#}
 {#<script src="/static/js/jquery.dlmenu.js"></script>#}
@@ -753,11 +757,9 @@
 </script>
 
 <script>
-$(function() {
-$(".video-link").jqueryVideoLightning({
-popover: true
+$(function () {
+	$("a.youtube").YouTubePopup({ autoplay: 1, draggable: true });
 
-});
 });
 </script>
 
