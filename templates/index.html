@@ -560,7 +560,7 @@
             $(function () {
                 var BV = new $.BigVideo({container: $('.tp-banner')});
                 BV.init();
-                BV.show('/static/media/msv.mp4');
+                BV.show('/static/media/msv.mp4', {ambient:true});
                 BV.getPlayer().volume(0)
             });
         </script>
