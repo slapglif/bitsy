@@ -134,7 +134,7 @@
         <div class="tp-wrapper">
             <div class="tp-banner-container">
                 <div class="tp-banner">
-                    <p>&nbsp;</p>
+
  <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -726,12 +726,26 @@
 
 <script type="text/javascript">
 
+   function isIE () {
+    var myNav = navigator.userAgent.toLowerCase();
+    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
+window.isIEOld = isIE() && isIE() < 9;
+window.isiPad = navigator.userAgent.match(/iPad/i);
+
+
+if($(window).width() > 599 && !isIEOld && !isiPad) {
     $(function () {
         var BV = new $.BigVideo({container: $('.tp-banner')});
         BV.init();
         BV.show('/static/media/msv.mp4', {ambient: true});
-        BV.getPlayer().volume(0)
+        BV.getPlayer().volume(0);
     });
+} else {
+    $('.tp-banner').css('background-image', 'url("/static/img/misc/y3.png")');
+
+}
 </script>
 
 <script>
