@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.secret_key = 'super secret key'
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     form = ContactForm()
     if request.method == 'POST':
