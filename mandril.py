@@ -1,6 +1,5 @@
 import mandrill,time
 import requests.packages.urllib3
-requests.packages.urllib3.disable_warnings()
 date = int(time.time())
 
 
