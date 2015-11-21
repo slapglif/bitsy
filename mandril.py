@@ -11,7 +11,7 @@ def drill(subject,body,email):
          'auto_text': None,
          'bcc_address': '',
          'from_email': email,
-         'from_name': 'Freebie',
+         'from_name': 'Bitsy',
          'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
          'headers': {'Reply-To': email},
          'html': '<p>%s</p>'%body,
