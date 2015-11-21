@@ -24,4 +24,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,threaded=True,host="204.12.211.219",post=80)
+    app.run(debug=True,threaded=True,host="204.12.211.219",port=80)
