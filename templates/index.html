@@ -254,6 +254,44 @@
     <!-- End main-header -->
     <p>&nbsp;</p>
     <!-- Start main-contents -->
+
+      <section class="main-contents milky-white-bg padding-top80" id="partners">
+
+        <div class="row">
+
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a1.jpg" alt="" style="height:100%; width:150px">
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a2.png" alt="" style="height:100%; width:100px">
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a3.png" alt="" style="height:100%; width:100px">
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a4.png" alt="" style="height:100%; width:150px">
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a5.png" alt="" style="height:100%; width:150px">
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="/static/img/misc/a6.jpg" alt="" style="height:100%; width:175px">
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <section class="main-contents milky-white-bg padding-top80" id="services">
         <div class="container">
             <div class="row">
@@ -384,6 +422,67 @@
         </div>
         <!-- /row -->
     </section>
+
+    <section class="main-contents milky-white-bg padding-top80" id="tech">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 margin-bottom25">
+                    <header class="section-title align-center">
+                        <h1>Our Technology</h1>
+
+                    </header>
+                </div>
+                <!-- /col-md-8 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+
+        <div class="fullwidth-section row">
+            <div class="col-md-6 wow fadeIn">
+                <div class="">
+                    <figure>
+                        <img src="/static/img/misc/z2.png" alt="">
+                    </figure>
+
+                    <!-- /details -->
+                </div>
+                <!-- /interactive-banner -->
+            </div>
+            <!-- /col-md-3 -->
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="">
+                    <figure>
+                        <img src="/static/img/misc/z1.png" alt="" style="height:100%; width:900px">
+                    </figure>
+
+                    <!-- /details -->
+                </div>
+                <!-- /interactive-banner -->
+            </div>
+            <!-- /col-md-3 -->
+        </div>
+
+
+        <div align="center">
+
+            <h3>Behind bitsy's Tech</h3>
+            <h4>Bitsy operates a top of the line drone for it's ariel video/photo work, called the DJI Inspire-1 as
+                shown above.
+                The drone ships with a very capable Zenmuse X3 However, because of our commitment to the top-tier
+                technology we have gone
+                to great lengths to fit the DJI-Inspire we use for the majority of our work with the newer Zenmuse X5
+                for the highest quality delivery possible.</h4>
+
+        </div>
+
+    </section>
+
+
+
+
+
     <!-- End main-contents -->
 
     {#                        <!-- Start main-contents -->#}
@@ -706,7 +805,8 @@
                             {% for message in form.message.errors %}
                                 <div class="flash alert alert-danger">{{ message }}</div>
                             {% endfor %}
-                            <form action="{{ url_for('index') }}" method="post" name="contact" role="form" class="contact-form">
+                            <form action="{{ url_for('index') }}" method="post" name="contact" role="form"
+                                  class="contact-form">
                                 {{ form.hidden_tag() }}
 
                                 <div class="from-group">
